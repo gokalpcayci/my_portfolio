@@ -2,30 +2,47 @@
 title: market
 description: An e commerce platform where you can buy and sell digital products.
 date: "2023-01-16"
-url: https://envshare.dev
 repository: gokalpcayci/market
 published: true
 ---
 
-EnvShare is a simple tool to share environment variables securely. It uses
-**AES-GCM** to encrypt your data before sending it to the server. The encryption
-key never leaves your browser.
+Market is a simplified version of an e-commerce. This was assigned to me for a job application. This is the only project i used Vite over Next.js because this was intended to evaluate my react knowledge. I took this technical case and put lots of effort because at the time i was thinking why not put this in a portfolio if i ever create one, and here we are :)
 
 ## Features
 
-- **Shareable Links:** Share your environment variables securely by sending a
-  link
-- **End-to-End Encryption:** AES-GCM encryption is used to encrypt your data
-  before sending it to the server
-- **Limit number of reads:** Limit the number of times a link can be read
-- **Auto Expire:** Automatically expire links and delete data after a certain
-  time
+products come from a json file and the images comes from the unsplash api. You can filter through the products and paginate through them. Although the products are not real, you can add them to your cart and remove them from your cart. The cart is stored in the local storage so you can refresh the page and still see the products in your cart.
 
-![](https://github.com/chronark/envshare/raw/main/img/envshare.png)
+![](/project_images/market/market_1.png)
+![](/project_images/market/market_2.png)
+![](/project_images/market/market_3.png)
+![](/project_images/market/market_4.png)
+
+## How can i run this locally
+
+1. Clone the repository or download the repository.
+
+```sh-session
+git clone git@github.com:gokalpcayci/market.git
+```
+
+2. Download the dependencies:
+
+```sh-session
+pnpm i
+```
+
+3. Start the local server.
+
+```sh-session
+pnpm run start
+```
+
+and you're good to go...
 
 ## Built with
 
-- [Next.js](https://nextjs.org)
+- [vite.js](https://vitejs.dev)
+- [typescript](https://www.typescriptlang.org)
 - [tailwindcss](https://tailwindcss.com)
-- Deployed on [Vercel](https://vercel.com?utm_source=envshare)
-- Data stored on [Upstash](https://upstash.com?utm_source=envshare)
+- [react-query](https://react-query.tanstack.com)
+- [react-hook-form](https://react-hook-form.com)
