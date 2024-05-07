@@ -2,7 +2,7 @@ import { withContentlayer } from "next-contentlayer";
 
 /** @type {import('next').NextConfig} */
 
-module.exports = {
+const nextConfig = {
   async headers() {
     const headers = [];
     if (process.env.NEXT_PUBLIC_VERCEL_ENV === "preview") {
@@ -10,7 +10,7 @@ module.exports = {
         headers: [
           {
             key: "X-Robots-Tag",
-            value: "noindex",
+            value: "all",
           },
         ],
         source: "/:path*",
@@ -18,9 +18,6 @@ module.exports = {
     }
     return headers;
   },
-};
-
-const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   experimental: {
     mdxRs: true,
