@@ -2,8 +2,8 @@ import "../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
-
+import { Analytics as BeamAnalytics } from "./components/analytics";
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "gokalpcayci.me",
   openGraph: {
@@ -48,6 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
+        <BeamAnalytics />
         <Analytics />
       </head>
       <body
