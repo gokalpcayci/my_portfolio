@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+
 import { Cards } from "./components/cards";
 const navigation = [{ name: "Contact", href: "/contact" }];
+console.log("GitHub Token:", process.env.GITHUB_TOKEN);
 
 export default function Home() {
   return (
