@@ -5,12 +5,12 @@ import { Metadata } from "next";
 import { Analytics as BeamAnalytics } from "./components/analytics";
 import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
-  title: "gokalpcayci.me",
+  title: "gokalpcayci.studio",
   openGraph: {
-    title: "gokalpcayci.me",
+    title: "gokalpcayci.studio",
 
-    url: "https://www.gokalpcayci.me/",
-    siteName: "gokalpcayci.me",
+    url: "https://www.gokalpcayci.studio/",
+    siteName: "gokalpcayci.studio",
     locale: "en-US",
     type: "website",
   },
