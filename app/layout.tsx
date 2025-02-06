@@ -1,10 +1,12 @@
 import "../global.css";
-import { Inter } from "@next/font/google";
-import LocalFont from "@next/font/local";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { Metadata } from "next";
 import { Analytics as BeamAnalytics } from "./components/analytics";
 import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gokalpcayci.studio/"),
+
   title: "gokalpcayci.studio",
   openGraph: {
     title: "gokalpcayci.studio",
@@ -35,7 +37,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const calSans = LocalFont({
+const calSans = localFont({
   src: "../public/fonts/CalSans-SemiBold.ttf",
   variable: "--font-calsans",
 });

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
-import { Icons } from "./components/icons";
 import { Cards } from "./components/cards";
 const navigation = [{ name: "Contact", href: "/contact" }];
 

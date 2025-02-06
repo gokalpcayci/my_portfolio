@@ -23,6 +23,7 @@
     "@vercel/analytics": "^1.2.2",
     "@vercel/postgres": "^0.7.2",
     "@vercel/speed-insights": "^1.0.10",
+    "caniuse-lite": "^1.0.30001697",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cobe": "^0.6.3",
